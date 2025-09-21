@@ -1,1 +1,1 @@
-# nextflow_genomics_01
+# DNA-seqのQC, Filtering, Alignment and SNP calling （nextflow_genomics_01）
