@@ -1,0 +1,133 @@
+9月-21 16:19:15.755 [main] DEBUG nextflow.cli.Launcher - $> nextflow run genomics_01.nf
+9月-21 16:19:15.798 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.7
+9月-21 16:19:15.807 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/shohei-noda/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch1,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4-patch1,nf-wave@1.12.1
+9月-21 16:19:15.816 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+9月-21 16:19:15.816 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+9月-21 16:19:15.817 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+9月-21 16:19:15.821 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+9月-21 16:19:15.829 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/shohei-noda/git/nextflow_genomics_01/nextflow.config
+9月-21 16:19:15.830 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/shohei-noda/git/nextflow_genomics_01/nextflow.config
+9月-21 16:19:15.843 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/shohei-noda/.nextflow/secrets/store.json
+9月-21 16:19:15.844 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@534ca02b] - activable => nextflow.secret.LocalSecretsProvider@534ca02b
+9月-21 16:19:15.846 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+9月-21 16:19:15.990 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+9月-21 16:19:15.995 [main] DEBUG nextflow.cli.CmdRun - Launching `genomics_01.nf` [serene_murdock] DSL2 - revision: 1e99633bb6
+9月-21 16:19:15.996 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+9月-21 16:19:15.996 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+9月-21 16:19:16.013 [main] DEBUG nextflow.Session - Session UUID: 5b800404-dba1-4278-b7e8-e578a986e760
+9月-21 16:19:16.013 [main] DEBUG nextflow.Session - Run name: serene_murdock
+9月-21 16:19:16.014 [main] DEBUG nextflow.Session - Executor pool size: 14
+9月-21 16:19:16.016 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+9月-21 16:19:16.018 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=42; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+9月-21 16:19:16.027 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.7 build 5955
+  Created: 08-09-2025 13:29 UTC (22:29 JDT)
+  System: Mac OS X 15.6.1
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.16+0
+  Encoding: UTF-8 (UTF-8)
+  Process: 12469@ShoheinoMacBook-Pro.local [127.0.0.1]
+  CPUs: 14 - Mem: 24 GB (185 MB) - Swap: 0 (0)
+9月-21 16:19:16.033 [main] DEBUG nextflow.Session - Work-dir: /Users/shohei-noda/git/nextflow_genomics_01/work [Mac OS X]
+9月-21 16:19:16.034 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/shohei-noda/git/nextflow_genomics_01/bin
+9月-21 16:19:16.037 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+9月-21 16:19:16.040 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+9月-21 16:19:16.042 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+9月-21 16:19:16.051 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+9月-21 16:19:16.053 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 15; maxThreads: 1000
+9月-21 16:19:16.071 [main] DEBUG nextflow.Session - Session start
+9月-21 16:19:16.150 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+9月-21 16:19:16.302 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+9月-21 16:19:16.302 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+9月-21 16:19:16.305 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+9月-21 16:19:16.307 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=14; memory=24 GB; capacity=14; pollInterval=100ms; dumpInterval=5m
+9月-21 16:19:16.308 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+9月-21 16:19:16.316 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+9月-21 16:19:16.335 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+9月-21 16:19:16.335 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+9月-21 16:19:16.335 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIMMOMATIC': maxForks=0; fair=false; array=0
+9月-21 16:19:16.337 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, TRIMMOMATIC
+9月-21 16:19:16.338 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+9月-21 16:19:16.340 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+9月-21 16:19:16.340 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIMMOMATIC
+9月-21 16:19:16.340 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_034cc4c6f93e45af: /Users/shohei-noda/git/nextflow_genomics_01/genomics_01.nf
+  Script_4808900cdf412ba5: /Users/shohei-noda/git/nextflow_genomics_01/modules/fastqc.nf
+  Script_a0ac179bb3bae485: /Users/shohei-noda/git/nextflow_genomics_01/modules/trimmomatic.nf
+9月-21 16:19:16.340 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+9月-21 16:19:16.340 [main] DEBUG nextflow.Session - Session await
+9月-21 16:19:16.412 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+9月-21 16:19:16.412 [Task submitter] INFO  nextflow.Session - [c3/ee8269] Submitted process > FASTQC (1)
+9月-21 16:19:16.419 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+9月-21 16:19:16.419 [Task submitter] INFO  nextflow.Session - [c7/1d3a7b] Submitted process > TRIMMOMATIC (1)
+9月-21 16:19:16.723 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: TRIMMOMATIC (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/shohei-noda/git/nextflow_genomics_01/work/c7/1d3a7b5954114d561ae44f88c7e85d]
+9月-21 16:19:16.724 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=42; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+9月-21 16:19:16.729 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=TRIMMOMATIC (1); work-dir=/Users/shohei-noda/git/nextflow_genomics_01/work/c7/1d3a7b5954114d561ae44f88c7e85d
+  error [nextflow.exception.ProcessFailedException]: Process `TRIMMOMATIC (1)` terminated with an error exit status (1)
+9月-21 16:19:16.738 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'TRIMMOMATIC (1)'
+
+Caused by:
+  Process `TRIMMOMATIC (1)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  trimmomatic PE -threads 2 -phred33 -trimlog log.txt \
+  ENCSR000COQ1_1.fastq.gz ENCSR000COQ1_2.fastq.gz \
+  ENCSR000COQ1_1_trimmed.fastq.gz ENCSR000COQ1_1_unpaired.fastq.gz \
+  ENCSR000COQ1_2_trimmed.fastq.gz ENCSR000COQ1_2_unpaired.fastq.gz \
+  ILLUMINACLIP:adapter.fa:2:30:10 \
+  LEADING:20 \
+  TRAILING:20 \
+  SLIDINGWINDOW:4:15 \
+  MINLEN:0
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  TrimmomaticPE: Started with arguments:
+   -threads 2 -phred33 -trimlog log.txt ENCSR000COQ1_1.fastq.gz ENCSR000COQ1_2.fastq.gz ENCSR000COQ1_1_trimmed.fastq.gz ENCSR000COQ1_1_unpaired.fastq.gz ENCSR000COQ1_2_trimmed.fastq.gz ENCSR000COQ1_2_unpaired.fastq.gz ILLUMINACLIP:adapter.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:15 MINLEN:0
+  ILLUMINACLIP: Using adapter file from current working directory: adapter.fa
+  Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+  Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+  Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+  Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+  Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+  ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+  Exception in thread "main" java.io.EOFException: Unexpected end of ZLIB input stream
+  	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:274)
+  	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:176)
+  	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:151)
+  	at org.usadellab.trimmomatic.util.compression.ConcatGZIPInputStream.read(ConcatGZIPInputStream.java:61)
+  	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
+  	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
+  	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
+  	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
+  	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
+  	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
+  	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
+  	at org.usadellab.trimmomatic.fastq.FastqParser.parseOne(FastqParser.java:53)
+  	at org.usadellab.trimmomatic.fastq.FastqParser.open(FastqParser.java:138)
+  	at org.usadellab.trimmomatic.TrimmomaticPE.process(TrimmomaticPE.java:146)
+  	at org.usadellab.trimmomatic.TrimmomaticPE.run(TrimmomaticPE.java:375)
+  	at org.usadellab.trimmomatic.Trimmomatic.main(Trimmomatic.java:68)
+
+Work dir:
+  /Users/shohei-noda/git/nextflow_genomics_01/work/c7/1d3a7b5954114d561ae44f88c7e85d
+
+Container:
+  community.wave.seqera.io/library/trimmomatic:0.40--d0d39a8c6102506c
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+9月-21 16:19:16.742 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `TRIMMOMATIC (1)` terminated with an error exit status (1)
+9月-21 16:19:16.749 [main] DEBUG nextflow.Session - Session await > all processes finished
+9月-21 16:19:16.749 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+9月-21 16:19:16.750 [main] DEBUG nextflow.Session - Session await > all barriers passed
+9月-21 16:19:16.753 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+9月-21 16:19:16.761 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=202ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+9月-21 16:19:16.950 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+9月-21 16:19:16.958 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
