@@ -7,4 +7,15 @@
 4. SAMtools
 5. Stacks
 
-## 
+## Data
+
+## FastQC
+
+## Trimmomatic
+
+## bwa-mem
+
+## SAMtools
+
+## Stacks
+
